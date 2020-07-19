@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-        <!-- Required meta tags always come first -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-    
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+
 <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
     <title>Ristorante Con Fusion</title>
 </head>
 
@@ -15,7 +17,7 @@
 
     <header class="jumbotron">
         <div class="container">
-            <div class="row">
+            <div class="row row-header">
                 <div class="col-12 col-sm-6">
                     <h1>Ristorante con Fusion</h1>
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
@@ -27,7 +29,8 @@
     </header>
 
     <div class="container">
-        <div class="row">
+        <!--Here align-items-center will make the center vertically aligned-->
+        <div class="row row-content align-items-center">
             <!-- order-sm-last means this content will be pushed to the right hand side of the screen-->
             <div class="col-12 col-sm-4 order-sm-last col-md-3">
                 <h3>Our Lipsmacking Culinary Creations</h3>
@@ -40,7 +43,7 @@
         </div>
 
 
-        <div class="row">
+        <div class="row row-content align-items-center">
             <div class="col-12 col-sm-4 col-md-3">
                 <h3>This Month's Promotions</h3>
             </div>
@@ -50,7 +53,7 @@
             </div>
         </div>
 
-        <div class="row">
+        <div class="row row-content align-items-center">
             <div class="col-12 col-sm-4 order-sm-last col-md-3">
                 <h3>Meet our Culinary Specialists</h3>
             </div>
@@ -62,12 +65,13 @@
         </div>
     </div>
 
-    <footer>
+    <footer class="footer">
         <div class="container">
             <div class="row">             
                 <div class="col-4 offset-1 col-sm-2">
                     <h5>Links</h5>
-                    <ul>
+                    <!--remove the bullet points-->
+                    <ul class="list-unstyled">
                         <li><a href="#">Home</a></li>
                         <li><a href="#">About</a></li>
                         <li><a href="#">Menu</a></li>
@@ -85,8 +89,9 @@
 		              Email: <a href="mailto:confusion@food.net">confusion@food.net</a>
 		           </address>
                 </div>
-                <div class="col-12 col-sm-4"> <!--Similarly, for extra small screen sizes, the content will be stacked below, while for small to extra large screen sizes, the content will take up 4 columns-->
-                    <div>
+                <!--Here the 'align-self-center' helps the content to be vertically aligned in the center instead of aligned on the top (look at the difference between Links & Address with these social media links below-->
+                <div class="col-12 col-sm-4 align-self-center"> <!--Similarly, for extra small screen sizes, the content will be stacked below, while for small to extra large screen sizes, the content will take up 4 columns-->
+                    <div class="text-center">
                         <a href="http://google.com/+">Google+</a>
                         <a href="http://www.facebook.com/profile.php?id=">Facebook</a>
                         <a href="http://www.linkedin.com/in/">LinkedIn</a>
@@ -96,7 +101,8 @@
                     </div>
                 </div>
            </div>
-           <div class="row">             
+           <!--Here 'justify-content-center' will horizontally center the content-->
+           <div class="row justify-content-center">             
                 <div class="col-auto">
                     <p>© Copyright 2018 Ristorante Con Fusion</p>
                 </div>
