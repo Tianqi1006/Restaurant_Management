@@ -14,6 +14,30 @@
 </head>
 
 <body>
+    <!--"navbar-expand-sm" means that for small and extra small screens, this navbar will become a toggle-able navbar (i.e. navbar is collapsed). "bg-primary" sets the background color and "fixed-top" keeps the navigation bar fixed at the top-->
+    <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!--the "a" tag here is a navbar brand which allows the display of some info (e.g. company name or logo) as a branding info in the navigation bar-->
+            <!--here href sets the hyperlink to the homepage-->
+            <a class="navbar-brand mr-auto" href="#">Restorante Con Fusion</a>
+            <div class="collapse navbar-collapse" id="Navbar">
+                <!--the "mr-auto" here specifies the right margin, so that the content will be pushed as left as possible within the navigation bar-->
+                <ul class="navbar-nav mr-auto">
+                    <!--"li" here uses list elements to include the various links in this unordered list-->
+                    <!--In every list item, the "nav-item" class allows these list items to be displayed horizontally as links in the navigation bar-->
+                    <!--then use "a" tag with the class "nav-link" (which allows the use of href) to add in the actual link-->
+                    <!--the "active" makes the link highlighted when you are on that particular page-->
+                    <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./aboutus.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
     <header class="jumbotron">
         <div class="container">
@@ -73,7 +97,7 @@
                     <!--remove the bullet points-->
                     <ul class="list-unstyled">
                         <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
+                        <li><a href="./aboutus.html">About</a></li>
                         <li><a href="#">Menu</a></li>
                         <li><a href="#">Contact</a></li>
                     </ul>
