@@ -25,7 +25,7 @@
             </button>
             <!--the "a" tag here is a navbar brand which allows the display of some info (e.g. company name or logo) as a branding info in the navigation bar-->
             <!--here href sets the hyperlink to the homepage-->
-            <a class="navbar-brand mr-auto" href="#">Ristorante Con Fusion</a>
+            <a class="navbar-brand mr-auto" href="#"><img src="img/logo.png" height="30" width="41"></a> <!--Replace the name of the restaurant with its logo-->
             <!--The "collapse navbar-collapse" enables the show/hide of these links when clicking the button (for small and extra small screens)-->
             <div class="collapse navbar-collapse" id="Navbar">
                 <!--the "mr-auto" here specifies the right margin, so that the content will be pushed as left as possible within the navigation bar-->
@@ -50,7 +50,8 @@
                     <h1>Ristorante con Fusion</h1>
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
                 </div>
-                <div class="col-12 col-sm"> <!-- col-sm indicates that the remaining (i.e. 6) columns will show here for small to extra large screen sizes; col-12 indicates that for extra small screen sizes, the content here will be stacked behind-->
+                <div class="col-12 col-sm align-self-center"> <!-- col-sm indicates that the remaining (i.e. 6) columns will show here for small to extra large screen sizes; col-12 indicates that for extra small screen sizes, the content here will be stacked behind-->
+                    <img src="img/logo.png" class="img-fluid"> <!--Adding the restaurant logo, "img-fluid" sets the image to be responsive and adapt to the screen sizes-->
                 </div>
             </div>
         </div>
@@ -65,8 +66,14 @@
             </div>
             <!-- similarly, order-sm-first means this content will be pushed to the left hand side of the screen-->
             <div class="col col-sm order-sm-first col-md">
-                <h2>Uthappizza</h2>
-                <p class="d-none d-sm-block">A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
+                <div class="media"> <!--Adding media objects-->
+                    <img class="d-flex mr-3 img-thumbnail align-self-center"
+                        src="img/uthappizza.png" alt="uthappizza"> <!--"mr-3" sets margin right to be 3 so that the description is slightly set apart from the image; "alt" sets the alternative -->
+                    <div class="media-body">
+                        <h2 class="mt-0">Uthappizza</h2> <!--"mt" sets the margin top to 0, so that the title will be aligned to the top of the media object-->
+                        <p class="d-none d-sm-block">A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -86,9 +93,15 @@
                 <h3>Meet our Culinary Specialists</h3>
             </div>
             <div class="col col-sm order-sm-first col-md">
-                <h2>Alberto Somayya</h2>
-                <h4>Executive Chef</h4>
-                <p class="d-none d-sm-block">Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. </p>
+                <div class="media">
+                    <img class="d-flex mr-3 img-thumbnail align-self-center"
+                        src="img/alberto.png" alt="alberto">
+                    <div class="media-body">
+                        <h2 class="mt-0">Alberto Somayya</h2>
+                        <h4>Executive Chef</h4>
+                        <p class="d-none d-sm-block">Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. </p>
+                    </div>
+                </div>  
             </div>
         </div>
     </div>
