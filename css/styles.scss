@@ -8,27 +8,27 @@ $carousel-item-height: 300px;
 
 //Scss Mixins
 @mixin zero-margin($pad-up-dn, $pad-left-right) {
-    margin: 0px auto;
+    margin:0px auto;
     padding: $pad-up-dn $pad-left-right;
 }
 
 .row-header {
-    @include zero-margin(0px, 0px);
+    @include zero-margin(0px,0px);
 }
 
 .row-content {
-    @include zero-margin(50px, 0px);
+    @include zero-margin(50px,0px);
     border-bottom: 1px ridge;
     min-height: 400px;
 }
 
 .footer {
     background-color: $background-pale;
-    @include zero-margin(20px, 0px);
+    @include zero-margin(20px,0px);
 }
 
 .jumbotron {
-    @include zero-margin(70px, 30px);
+    @include zero-margin(70px,30px);
     background-color: $background-light;
     color: floralwhite;
 }
@@ -77,3 +77,18 @@ body {
     z-index: 1;
 }
 
+.modal-content {
+
+    .modal-header {
+        background-color: $background-dark;
+        color: floralwhite;
+
+        .close {
+            color: floralwhite;
+        }
+    }
+
+    .modal-body {
+        background-color: $background-pale;
+    }  
+}
